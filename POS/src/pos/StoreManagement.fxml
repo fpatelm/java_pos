@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.StoreManagementController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="44.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="286.0" />
+      <Button fx:id="btn_back" layoutX="5.0" layoutY="3.0" mnemonicParsing="false" opacity="0.83" prefHeight="38.0" prefWidth="48.0" text="〈">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_staff" layoutX="43.0" layoutY="66.0" mnemonicParsing="false" onAction="#btn_staff_action" prefHeight="93.0" prefWidth="93.0" text="STAFF" visible="false" />
+      <Button fx:id="btn_items" layoutX="151.0" layoutY="66.0" mnemonicParsing="false" onAction="#btn_items_action" prefHeight="93.0" prefWidth="93.0" text="ITEMS" />
+      <Button fx:id="btn_login" layoutX="43.0" layoutY="174.0" mnemonicParsing="false" onAction="#btn_login_action" prefHeight="93.0" prefWidth="93.0" text="LOGIN" visible="false" />
+      <Button layoutX="151.0" layoutY="174.0" mnemonicParsing="false" onAction="#btn_order_action" prefHeight="93.0" prefWidth="93.0" text="ORDER" />
+      <Button fx:id="btn_report" layoutX="43.0" layoutY="279.0" mnemonicParsing="false" onAction="#btn_report_action" prefHeight="93.0" prefWidth="93.0" text="REPORT" visible="false" />
+      <Button fx:id="btn_login11" layoutX="151.0" layoutY="279.0" mnemonicParsing="false" onAction="#btn_login_action" prefHeight="93.0" prefWidth="93.0" text="TIME" visible="false" />
+   </children>
+</AnchorPane>

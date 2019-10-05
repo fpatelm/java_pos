@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="289.0" maxWidth="600.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="289.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="pos.AddEmployeeController">
+   <children>
+      <Button id="SaveBtn" layoutX="535.0" layoutY="231.0" mnemonicParsing="false" text="Save" />
+      <VBox layoutX="22.0" layoutY="28.0" prefHeight="69.0" prefWidth="141.0">
+         <children>
+            <Label text="Select Employee" />
+            <ChoiceBox id="EmployeeList" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Button id="CancelBtn" layoutX="462.0" layoutY="231.0" mnemonicParsing="false" text="Cancel" />
+      <HBox layoutX="29.0" layoutY="131.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="542.0" spacing="25.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="103.0">
+               <children>
+                  <Label text="Id" />
+                  <TextField id="EmployeeIdBox" prefHeight="31.0" prefWidth="118.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="69.0" prefWidth="200.0">
+               <children>
+                  <Label text="Name" />
+                  <TextField id="EmployeeNameBox" />
+               </children>
+            </VBox>
+            <VBox prefHeight="130.0" prefWidth="164.0">
+               <children>
+                  <Label text="Rights" />
+                  <ChoiceBox id="EmployeeRightsList" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

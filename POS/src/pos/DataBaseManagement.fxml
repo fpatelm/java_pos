@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.DataBaseManagementController">
+   <children>
+      <VBox layoutX="48.0" layoutY="41.0" prefHeight="72.0" prefWidth="349.0">
+         <children>
+            <Label text="Pick a dataset" />
+            <ComboBox fx:id="DatasetDropDownList" prefHeight="31.0" prefWidth="355.0">
+            </ComboBox>
+         </children>
+      </VBox>
+      <Button id="ExitBtn" alignment="CENTER" contentDisplay="TOP" layoutX="414.0" layoutY="552.0" mnemonicParsing="false" onAction="#exitBtnClicked" prefHeight="31.0" prefWidth="65.0" text="Exit" />
+      <VBox layoutX="414.0" layoutY="206.0" spacing="15.0">
+         <children>
+            <Button fx:id="AddItemBtn" disable="true" mnemonicParsing="false" onAction="#addBtnClicked" prefHeight="31.0" prefWidth="62.0" text="Add" />
+            <Button fx:id="DeleteBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="65.0" text="Open" />
+            <Button fx:id="EditBtn" mnemonicParsing="false" onAction="#editBtnClicked" prefHeight="31.0" prefWidth="63.0" text="Edit" />
+            <Button id="DeleteBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="65.0" text="Delete" />
+         </children>
+      </VBox>
+      <VBox layoutX="49.0" layoutY="113.0" prefHeight="72.0" prefWidth="349.0">
+         <children>
+            <Label text="Sub data" />
+            <ComboBox fx:id="SubDataDropDownList" disable="true" prefHeight="31.0" prefWidth="357.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="49.0" layoutY="206.0" prefHeight="393.0" prefWidth="349.0" spacing="10.0">
+         <children>
+            <TextField fx:id="NewItemTextBox" disable="true" prefHeight="31.0" prefWidth="334.0" />
+            <ListView fx:id="ItemViewList" nodeOrientation="LEFT_TO_RIGHT" prefHeight="335.0" prefWidth="364.0" />
+         </children>
+      </VBox>
+      <Label fx:id="newItemLabel" layoutX="49.0" layoutY="185.0" text="New Item" />
+      <Button fx:id="AddSubDataBtn" disable="true" layoutX="414.0" layoutY="134.0" mnemonicParsing="false" onAction="#addSubDataClicked" text="+" />
+      <Button fx:id="AddSubDataBtn1" disable="true" layoutX="454.0" layoutY="134.0" mnemonicParsing="false" onAction="#addSubDataClicked" text="x" />
+      <Label fx:id="ErrorLabel" layoutX="14.0" layoutY="14.0" text="Error Message" visible="false" />
+   </children>
+</AnchorPane>

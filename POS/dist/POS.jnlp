@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="POS.jnlp">
+  <information>
+    <title>POS</title>
+    <vendor>fpatel</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="POS.jar" size="70886" download="eager" />
+    <jar href="lib/gson-2.6.2.jar" size="229650" download="eager" />
+    <jar href="lib/jpos-controls-110.jar" size="321865" download="eager" />
+    <jar href="lib/jpos.jar" size="687903" download="eager" />
+    <jar href="lib/mongo-java-driver-3.0.0-javadoc.jar" size="1994272" download="eager" />
+    <jar href="lib/mongo-java-driver-3.0.0-sources.jar" size="919124" download="eager" />
+    <jar href="lib/mongo-java-driver-3.0.0.jar" size="1278601" download="eager" />
+    <jar href="lib/morphia-1.0.1-javadoc.jar" size="866942" download="eager" />
+    <jar href="lib/morphia-1.0.1-sources.jar" size="228534" download="eager" />
+    <jar href="lib/morphia-1.0.1.jar" size="362065" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="POS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pos.POS"  name="POS" />
+  <update check="always"/>
+</jnlp>

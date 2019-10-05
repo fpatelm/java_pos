@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.OrderScreenController">
+   <children>
+      <TableView fx:id="OrderTable" layoutX="14.0" layoutY="99.0" prefHeight="418.0" prefWidth="382.0">
+         <columns>
+            <TableColumn fx:id="QuantityCol" editable="false" maxWidth="1200.0" prefWidth="40.0" sortable="false" text="Qt" />
+            <TableColumn fx:id="ItemNameCol" maxWidth="7000.0" prefWidth="197.0" sortable="false" text="Item" />
+            <TableColumn fx:id="UnitPriceCol" maxWidth="3000.0" prefWidth="63.0" sortable="false" text="€/u" />
+            <TableColumn fx:id="TotalPriceCol" maxWidth="3000.0" prefWidth="167.0" sortable="false" text="Total" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ScrollPane fx:id="ItemsListView" layoutX="456.0" layoutY="104.0" prefHeight="562.0" prefWidth="570.0" />
+      <Separator layoutX="1030.0" orientation="VERTICAL" prefHeight="739.0" prefWidth="9.0" />
+      <ScrollPane fx:id="CategoryListView" layoutX="1040.0" layoutY="148.0" opacity="0.53" prefHeight="540.0" prefWidth="154.0" />
+      <Button contentDisplay="CENTER" ellipsisString="" layoutX="1041.0" layoutY="110.0" mnemonicParsing="false" onAction="#UpButtonCategory" prefHeight="31.0" prefWidth="154.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="1041.0" layoutY="695.0" mnemonicParsing="false" onAction="#DownButtonCategory" prefHeight="31.0" prefWidth="154.0" text="+">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="456.0" layoutY="670.0" mnemonicParsing="false" onAction="#UpButtonItem" prefHeight="48.0" prefWidth="70.0" text="-">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="increaseBtn" layoutX="401.0" layoutY="126.0" mnemonicParsing="false" onAction="#IncreaseButton" text="+">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="decreaseBtn" layoutX="402.0" layoutY="162.0" mnemonicParsing="false" onAction="#DecreaseButton" text="-">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="956.0" layoutY="670.0" mnemonicParsing="false" onAction="#DownButtonItem" prefHeight="49.0" prefWidth="70.0" text="+">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteCartItem" layoutX="402.0" layoutY="201.0" mnemonicParsing="false" onAction="#DeleteCartItem" text="x">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <VBox layoutX="254.0" layoutY="558.0" prefHeight="130.0" prefWidth="188.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="239.0" spacing="20.0">
+               <children>
+                  <Label prefWidth="80.0" text="Net:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNetTotal">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="239.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="81.0" text="Tax:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelTaxTotal">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="239.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="80.0" text="Total">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelTotal" textFill="#970101">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="239.0" spacing="20.0">
+               <children>
+                  <Label fx:id="LabelTextTotaDue" prefHeight="19.0" prefWidth="80.0" text="Total Due:" textFill="#970101" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelTotalDue" textFill="#970101">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btn_cancel" layoutX="942.0" layoutY="17.0" mnemonicParsing="false" onAction="#CancelAction" prefHeight="72.0" prefWidth="81.0" text="CANCEL" />
+      <Separator layoutX="445.0" layoutY="1.0" orientation="VERTICAL" prefHeight="739.0" prefWidth="9.0" />
+      <Separator layoutX="1034.0" layoutY="97.0" prefHeight="6.0" prefWidth="168.0" />
+      <Button fx:id="MainActionBtn" layoutX="1067.0" layoutY="7.0" mnemonicParsing="false" onAction="#mainAction" prefHeight="87.0" prefWidth="101.0" text="PAY">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="58.0" prefHeight="37.0" prefWidth="76.0" text="17:08">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="31.0" prefHeight="37.0" prefWidth="188.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelCheckNumber" layoutX="15.0" layoutY="4.0" prefHeight="37.0" prefWidth="188.0" text="Check #1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="endTrxBtn" layoutX="852.0" layoutY="17.0" mnemonicParsing="false" onAction="#endTransaction" prefHeight="72.0" prefWidth="81.0" text="END" />
+      <TableView fx:id="FopTable" layoutX="15.0" layoutY="522.0" prefHeight="200.0" prefWidth="234.0">
+         <columns>
+            <TableColumn fx:id="FopCol" maxWidth="7000.0" prefWidth="151.0" sortable="false" text="Payment" />
+            <TableColumn fx:id="ValueCol" maxWidth="3000.0" prefWidth="81.0" sortable="false" text="Amount" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="deletePayItem" layoutX="253.0" layoutY="522.0" mnemonicParsing="false" onAction="#DeletePayItem" text="x">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <HBox layoutX="289.0" layoutY="528.0" prefHeight="27.0" prefWidth="154.0" spacing="20.0">
+         <children>
+            <Label fx:id="LabelChangeText" prefHeight="20.0" prefWidth="74.0" text="Change:" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelChange" textFill="#970101">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

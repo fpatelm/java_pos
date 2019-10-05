@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="305.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="pos.AddStaffController">
+   <children>
+      <VBox layoutX="22.0" layoutY="269.0" prefHeight="140.0" prefWidth="262.0" spacing="10.0">
+         <children>
+            <TextField fx:id="nameBox" prefHeight="31.0" prefWidth="262.0" promptText="Name" />
+            <CheckBox mnemonicParsing="false" text="Admin" />
+            <PasswordField fx:id="passwordBox" promptText="Password" />
+            <PasswordField fx:id="rePasswordBox" promptText="Re-type password" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutY="415.0" prefHeight="27.0" prefWidth="305.0" spacing="10.0">
+         <children>
+            <Button fx:id="addBtn" mnemonicParsing="false" text="Add" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="newBtn" mnemonicParsing="false" text="New" />
+            <Button fx:id="doneBtn" mnemonicParsing="false" text="Done" />
+         </children>
+      </HBox>
+      <ListView fx:id="listView" layoutX="22.0" layoutY="14.0" prefHeight="243.0" prefWidth="262.0" />
+   </children>
+</AnchorPane>

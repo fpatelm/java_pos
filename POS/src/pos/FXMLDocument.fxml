@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="790.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.FXMLDocumentController">
+    <children>
+      <GridPane layoutX="177.0" layoutY="405.0" prefHeight="292.0" prefWidth="435.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="143.0" text="0" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="62.0" prefWidth="143.0" text="&lt;&lt;" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="1" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="8" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="4" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="9" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="62.0" prefWidth="143.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="62.0" prefWidth="143.0" text="7" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Accordion layoutX="316.0" layoutY="103.0" />
+      <VBox layoutX="177.0" layoutY="129.0" prefHeight="206.0" prefWidth="435.0">
+         <children>
+            <Label text="Id">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </TextField>
+            <Label text="Code">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <PasswordField>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </VBox>
+      <GridPane layoutX="177.0" layoutY="704.0" prefHeight="63.0" prefWidth="435.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="164.0" text="OK" textAlignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="80.0" prefWidth="170.0" text="Cancel" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="97.0" stroke="BLACK" strokeType="INSIDE" width="789.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#142268d9" />
+                  <Stop color="#132166d9" offset="0.1503267973856209" />
+                  <Stop color="#132166d9" offset="0.2777777777777778" />
+                  <Stop color="#132166d9" offset="0.4019607843137255" />
+                  <Stop color="#132166d9" offset="0.46732026143790845" />
+                  <Stop color="#132166d9" offset="0.6666666666666667" />
+                  <Stop color="#132166d9" offset="0.738562091503268" />
+                  <Stop color="#132166d9" offset="0.7777777777777779" />
+                  <Stop color="#132166d9" offset="0.8071895424836601" />
+                  <Stop color="#132166d9" offset="0.9248366013071896" />
+                  <Stop color="#132166d9" offset="0.9934640522875817" />
+                  <Stop color="#1e4a83" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="12.0" prefHeight="60.0" prefWidth="341.0" text="Point of Sale" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="177.0" layoutY="328.0" prefHeight="46.0" prefWidth="435.0" promptText="Selelect User" />
+    </children>
+</AnchorPane>

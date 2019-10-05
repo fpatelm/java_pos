@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos.AddFoodItemController">
+   <children>
+      <VBox layoutX="53.0" layoutY="60.0" prefHeight="235.0" prefWidth="284.0">
+         <children>
+            <Label text="Item" />
+            <TextField fx:id="ItemBox" />
+            <Label text="Price" />
+            <TextField fx:id="PriceBox" />
+            <Label text="Discount (%)" />
+            <TextField fx:id="DiscountPercentageBox" />
+            <Label text="Discount (€)" />
+            <TextField fx:id="DiscountMonetaryBox" />
+         </children>
+      </VBox>
+      <Label layoutX="18.0" layoutY="14.0" text="Error Message" visible="false" />
+      <ListView  fx:id="ListView" layoutX="379.0" layoutY="53.0" prefHeight="262.0" prefWidth="215.0" />
+      <HBox layoutX="53.0" layoutY="286.0" prefHeight="41.0" prefWidth="196.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#NewBtnClicked" text="New" />
+            <Button mnemonicParsing="false" onAction="#SaveBtnClicked" text="Save" />
+         </children>
+      </HBox>
+      <Button layoutX="246.0" layoutY="378.0" mnemonicParsing="false" onAction="#CancelBtnClicked" text="Cancel" />
+      <Button layoutX="325.0" layoutY="378.0" mnemonicParsing="false" onAction="#OkBtnClicked" prefHeight="31.0" prefWidth="64.0" text="Ok" />
+   </children>
+</AnchorPane>
